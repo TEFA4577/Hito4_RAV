@@ -1,0 +1,26 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class Texto : MonoBehaviour
+{
+   
+      public Text texto;
+      public string frase;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    public void onMouseUp()
+    {
+        texto.text=frase;  
+    }
+    public void onMouseLeave()
+    {
+        texto.text="";  
+    }
+}
